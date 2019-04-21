@@ -1,0 +1,12 @@
+; this is a program that finds c for ;
+;             a * b = c              ;
+
+JIE 05 07 04   ; 0x00 jumps to the stop instruction if the counter equals a
+ADD 06 254 254 ; 0x01 adds b to c and places it in c
+ADD 07 082 07   ; 0x02 increments the counter up by one
+JMP 00         ; 0x03 jumps to address 0x00
+STP            ; 0x04 stop instruction
+3              ; 0x05t a
+256            ; 0x06 b
+0              ; 0x07 counter
+1              ; 0x08 storage for 1

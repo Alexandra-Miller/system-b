@@ -1,0 +1,10 @@
+; this is a program that finds c for ;
+;             a - b = c              ;
+
+FLP 4       ; 0x00  this flips the value a
+ADD 4 5 4   ; 0x01  this adds one to a
+ADD 3 4 6   ; 0x02  this adds a to b, and places the ansewer c in address 0x6
+0           ; 0x03  this stores the value a
+0           ; 0x04  this stores the value of b
+1           ; 0x05  this is where the one is stored for the add one operation
+            ; 0x06  this is where the value c will go
